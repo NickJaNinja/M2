@@ -11,9 +11,6 @@ import java.util.*;
  */
 public class Person2 {
 
-	public static void main(String[] args) {
-		System.out.println(calc("123"));
-	}
     /** Holds the persons real name */
     private String name;
 	 	/**
