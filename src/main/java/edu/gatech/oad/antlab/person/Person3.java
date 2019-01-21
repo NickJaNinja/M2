@@ -46,7 +46,7 @@ public class Person3 {
 		String inverseInput = "";
 		for (int i = input.length() - 1; i >= 0; i--) {
 			char Character = input.charAt(i);
-			inverseInput = char + inverseInput;
+			inverseInput = Character + inverseInput;
 		}
 		return inverseInput;
 	}
