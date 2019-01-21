@@ -35,7 +35,7 @@ public class Person4 {
         for (int i = 0; i < input.length(); i ++) {
             result += input.charAt(i) + 1;
         }
-      return null;
+      return result;
     }
 
     /**
