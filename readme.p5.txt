@@ -1,1 +1,2 @@
-This is the best README ever to be in existence!!!!!!
+Nicholas Fratto
+nfratto3@gatech.edu
