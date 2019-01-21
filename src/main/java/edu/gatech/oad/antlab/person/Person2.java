@@ -10,6 +10,10 @@ import java.util.*;
  * @version 1.1
  */
 public class Person2 {
+
+	public static void main(String[] args) {
+		System.out.println(calc("123"));
+	}
     /** Holds the persons real name */
     private String name;
 	 	/**
@@ -32,13 +36,16 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-		List<Character> l = new ArrayList<Character>();
-		Collections.shuffle(l);
-		String ans = "";
-		for (int i = 0; i < l.length(); i++) {
-			ans += l.get(i);
-		}
-	  return ans;
+		List<Character> ch = new ArrayList<Character>();
+        for (char c:input.toCharArray()) {
+            ch.add(c);
+        }
+        StringBuilder ans = new StringBuilder(input.length());
+        while (ch.size() > 0) {
+            int r = (int)(Math.random()*ch.size());
+            ans.append(ch.remove(r));
+        }
+	  return ans.toString();
 	}
 	/**
 	 * Return a string rep of this object
